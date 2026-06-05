@@ -2,11 +2,13 @@
 
 I have deployed a Identidy management system on Windows Server 2025 and created Users,a Organizational Unit (OU) and a GPO. I used this configuration and used the created mock credentials to login into a Ubuntu VM. I have also implemented Multi-Factor Authentication using Google Authenticator TOTP locally on Ubuntu to increase security. 
 
-This project is divided into ___ Steps:
+This project is divided into 5 Steps:
 
 1. Initial Setup and enable Active Directory Server
-2. s
-3. s
+2. Creating an OU and installing RADIUS server
+3. Creating a GPO
+4. Installing Network Policy Server (NPS)
+5. Google Authenticator MFA
 
 ---------------------------------------------------------------------------------------------------------
 
