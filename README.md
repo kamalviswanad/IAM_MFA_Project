@@ -80,8 +80,7 @@ Yay everything is set up!
    Now go to Ubuntu VM and run ```sudo secadmin@localhost``` to login into the secadmin account.
 
 
-TroubleSHooting before next step:<img width="782" height="557" alt="IAM - RADIUS setup" src="https://github.com/user-attachments/assets/f76b1f77-8365-42cc-a15a-fb35509bf86b" />
-
+TroubleSHooting before next step:
 1) If you can't login after all this, on Ubuntu run ```sudo nano /etc/pam_radius_auth.conf``` and comment out other IP addresses you see
 2) Then restart SSH : ```sudo systemctl restart ssh```
 3) ssh secadmin@localhost   [this should work]
@@ -101,6 +100,9 @@ On ubuntu VM
              PasswordAuthentication yes
              ```
      - also add ``` AuthenticationMethods password,keyboard-interactive``` at the bottom of the file
+
+<img width="533" height="32" alt="image" src="https://github.com/user-attachments/assets/19fced72-80b3-4b38-9882-0b9a4cd93031" />
+
     
 5. run	```sudo sshd -t``` this command to verify the ssh configuration file is good with no errors.
 6. sudo systemctl restart ssh
